@@ -706,7 +706,7 @@
         grid-template-columns: 1fr;
         gap: 3rem;
       }
-      .crisis-banner > div {
+      .crisis-banner > div:not(.rose-scatter) {
         justify-self: start;
       }
 
@@ -907,6 +907,8 @@
       width: 100%; height: 100%;
       grid-column: 1 / -1;
       grid-row: 1 / -1;
+      justify-self: stretch !important;
+      align-self: stretch !important;
       pointer-events: none;
       z-index: 0;
     }
