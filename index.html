@@ -131,19 +131,12 @@
 
     /* PAGES */
     .page {
-      display: none;
       padding-top: 100px; /* offset for fixed nav */
-      animation: fadeIn 0.4s ease forwards;
     }
 
-    .page.active {
-      display: block;
-    }
+    
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    
 
     /* HERO */
     .hero {
@@ -301,6 +294,74 @@
     .pillar-desc {
       color: var(--text-muted);
       font-size: 0.95rem;
+    }
+
+
+
+    .pillar-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* CRISIS BANNER */
+    .crisis-banner {
+      background: var(--primary);
+      padding: 100px 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .crisis-banner > div {
+      max-width: 600px;
+      justify-self: end;
+    }
+    
+    .crisis-banner > div:first-child {
+      justify-self: start;
+    }
+
+    .crisis-banner h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .crisis-banner p {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .crisis-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .stat {
+      border-left: 4px solid rgba(255, 255, 255, 0.3);
+      padding-left: 1.5rem;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.5;
+      font-weight: 500;
     }
 
     /* NEWS */
@@ -648,6 +709,15 @@
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
+      .crisis-banner {
+        padding: 4rem 5%;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .crisis-banner > div {
+        justify-self: start;
+      }
+
       .hero {
         padding: 100px 5% 60px;
       }
@@ -922,7 +992,7 @@
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">DR</div>
-            <div class="candidate-name">Dorothy Roosevelt List</div>
+            <div class="candidate-name">Dorothy Roosevelt</div>
             <div class="candidate-role">House Candidate</div>
             <div class="candidate-constituency">Reno</div>
             <div class="candidate-bio">Running for the 2060 House elections.</div>
