@@ -915,20 +915,26 @@
       opacity: 0.15;
       mix-blend-mode: color-burn;
     }
-    .scatter-rose.r1 {
-      width: 200px; top: 5%; left: 5%; transform: rotate(-25deg);
+        .scatter-rose.r1 {
+      width: 180px; top: 2%; left: 2%; transform: rotate(-25deg);
     }
     .scatter-rose.r2 {
-      width: 300px; bottom: 10%; right: 5%; transform: rotate(15deg);
+      width: 250px; bottom: 2%; right: 2%; transform: rotate(15deg);
     }
     .scatter-rose.r3 {
-      width: 150px; top: 15%; left: 45%; transform: rotate(-60deg);
+      width: 140px; top: 5%; right: 40%; transform: rotate(-60deg);
     }
     .scatter-rose.r4 {
-      width: 180px; bottom: 15%; left: 25%; transform: rotate(35deg);
+      width: 190px; bottom: 5%; left: 30%; transform: rotate(35deg);
     }
     .scatter-rose.r5 {
-      width: 220px; top: 25%; right: 30%; transform: rotate(75deg);
+      width: 200px; top: 35%; right: 18%; transform: rotate(75deg);
+    }
+    .scatter-rose.r6 {
+      width: 160px; top: 40%; left: 15%; transform: rotate(-15deg);
+    }
+    .scatter-rose.r7 {
+      width: 220px; bottom: 10%; right: 35%; transform: rotate(-80deg);
     }
     .crisis-stats {
       position: relative;
