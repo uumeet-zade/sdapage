@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Democratic Alliance — For the Republic</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-brand" onclick="showPage('home')">
+      <img class="nav-logo"
+        src="SDAlogo.svg"
+        alt="Social Democratic Alliance Logo" />
+      <span class="nav-name">Social Democratic Alliance</span>
+      
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" href="index.html">Home</a></li>
+      <li><a href="#" href="candidates.html">Candidates</a></li>
+      <li><a href="#" href="events.html" class="active">Events</a></li>
+    </ul>
+  </nav>
+  
+  <div class="page-header" style="margin-top: 73px;">
+    <h1>On the Ground</h1>
+    <p>Join us at town halls, rallies, and community meetings across Caprica.</p>
+  </div>
+  <div class="events-section">
+      <div class="events-filter">
+        <button class="filter-btn active" onclick="filterEvents('all', this)">All Events</button>
+        <button class="filter-btn" onclick="filterEvents('presidential', this)">Presidential</button>
+        <button class="filter-btn" onclick="filterEvents('constituency', this)">Constituency</button>
+        <button class="filter-btn" onclick="filterEvents('party', this)">Party</button>
+      </div>
+
+      <div class="events-list" id="events-list">
+
+        <div class="event-row" data-type="presidential">
+          <div class="event-date-block">
+            <div class="event-day">15</div>
+            <div class="event-month">Oct</div>
+          </div>
+
+  <footer>
+      <div class="footer-brand">
+        <img
+          src="SDAlogo.svg"
+          alt="Social Democratic Alliance" />
+        <div class="footer-brand-text">
+          <div class="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto">For the Republic. For the People.</div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        Upcoming Elections · Caprica<br />
+        Authorised by Social Democratic Alliance Central Council
+      </div>
+    </footer>
+  <a href="#" class="floating-cta">Join the Alliance</a>
+</body>
+</html>
