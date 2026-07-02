@@ -307,12 +307,12 @@
       align-items: center;
     }
 
-    .crisis-banner > div {
+    .crisis-banner > div:not(.rose-scatter) {
       max-width: 600px;
       justify-self: end;
     }
     
-    .crisis-banner > div:first-child {
+    .crisis-banner > div:nth-child(2) {
       justify-self: start;
     }
 
@@ -918,38 +918,95 @@
       min-width: 60px;
       max-width: 250px;
     }
-        .scatter-rose.r1 {
-      width: 10vw; top: 10%; left: 3%; transform: rotate(-20deg);
+    .scatter-rose.r1 {
+      width: 7.7vw; top: 34.8%; left: 71.1%; transform: rotate(-29.6deg);
     }
     .scatter-rose.r2 {
-      width: 12vw; bottom: 10%; left: 18%; transform: rotate(35deg);
+      width: 4.6vw; top: 44.8%; left: 17.7%; transform: rotate(-13.1deg);
     }
     .scatter-rose.r3 {
-      width: 7vw; top: 5%; left: 34%; transform: rotate(-50deg);
+      width: 4.2vw; top: 8.0%; left: 10.9%; transform: rotate(-50.9deg);
     }
     .scatter-rose.r4 {
-      width: 9vw; bottom: 5%; left: 47%; transform: rotate(70deg);
+      width: 6.8vw; top: 84.4%; left: 29.9%; transform: rotate(-3.4deg);
     }
     .scatter-rose.r5 {
-      width: 10vw; top: 10%; left: 63%; transform: rotate(-85deg);
+      width: 6.4vw; top: 19.0%; left: 1.4%; transform: rotate(87.4deg);
     }
     .scatter-rose.r6 {
-      width: 12vw; bottom: 12%; left: 78%; transform: rotate(15deg);
+      width: 6.0vw; top: -12.8%; left: 58.3%; transform: rotate(-6.9deg);
     }
     .scatter-rose.r7 {
-      width: 10vw; top: 30%; right: 3%; transform: rotate(45deg);
+      width: 9.4vw; top: 15.7%; left: 56.3%; transform: rotate(-61.6deg);
     }
     .scatter-rose.r8 {
-      width: 13vw; top: 40%; left: 0%; transform: rotate(10deg);
+      width: 10.1vw; top: -32.8%; left: 1.6%; transform: rotate(-33.9deg);
     }
     .scatter-rose.r9 {
-      width: 11vw; bottom: 40%; left: -2%; transform: rotate(-30deg);
+      width: 8.3vw; top: -36.1%; left: 93.8%; transform: rotate(-79.0deg);
     }
     .scatter-rose.r10 {
-      width: 14vw; top: 5%; right: -2%; transform: rotate(-15deg);
+      width: 11.8vw; top: -29.9%; left: 73.5%; transform: rotate(-52.0deg);
     }
     .scatter-rose.r11 {
-      width: 15vw; bottom: -5%; right: 10%; transform: rotate(65deg);
+      width: 9.5vw; top: 23.3%; left: 25.5%; transform: rotate(75.2deg);
+    }
+    .scatter-rose.r12 {
+      width: 4.6vw; top: 19.7%; left: 38.4%; transform: rotate(47.6deg);
+    }
+    .scatter-rose.r13 {
+      width: 11.6vw; top: 14.7%; left: 44.0%; transform: rotate(11.0deg);
+    }
+    .scatter-rose.r14 {
+      width: 10.3vw; top: 94.8%; left: 71.6%; transform: rotate(89.5deg);
+    }
+    .scatter-rose.r15 {
+      width: 7.5vw; top: 79.3%; left: 18.4%; transform: rotate(-26.3deg);
+    }
+    .scatter-rose.r16 {
+      width: 5.2vw; top: 84.4%; left: 61.7%; transform: rotate(34.2deg);
+    }
+    .scatter-rose.r17 {
+      width: 5.4vw; top: 97.6%; left: 37.1%; transform: rotate(37.4deg);
+    }
+    .scatter-rose.r18 {
+      width: 8.9vw; top: -24.2%; left: 23.9%; transform: rotate(-5.2deg);
+    }
+    .scatter-rose.r19 {
+      width: 5.6vw; top: 108.1%; left: -3.5%; transform: rotate(-7.9deg);
+    }
+    .scatter-rose.r20 {
+      width: 4.4vw; top: -37.1%; left: 64.9%; transform: rotate(-64.1deg);
+    }
+    .scatter-rose.r21 {
+      width: 4.0vw; top: 20.0%; left: 93.8%; transform: rotate(-57.0deg);
+    }
+    .scatter-rose.r22 {
+      width: 5.6vw; top: -37.0%; left: 85.5%; transform: rotate(-50.8deg);
+    }
+    .scatter-rose.r23 {
+      width: 10.1vw; top: 83.2%; left: 45.8%; transform: rotate(82.0deg);
+    }
+    .scatter-rose.r24 {
+      width: 5.0vw; top: -31.9%; left: 45.3%; transform: rotate(43.8deg);
+    }
+    .scatter-rose.r25 {
+      width: 6.4vw; top: 110.3%; left: 22.6%; transform: rotate(-82.1deg);
+    }
+    .scatter-rose.r26 {
+      width: 4.1vw; top: 62.8%; left: 31.1%; transform: rotate(56.5deg);
+    }
+    .scatter-rose.r27 {
+      width: 4.9vw; top: 0.1%; left: 18.2%; transform: rotate(-0.9deg);
+    }
+    .scatter-rose.r28 {
+      width: 4.6vw; top: -30.0%; left: 15.3%; transform: rotate(-3.0deg);
+    }
+    .scatter-rose.r29 {
+      width: 9.7vw; top: 19.1%; left: 80.8%; transform: rotate(-2.5deg);
+    }
+    .scatter-rose.r30 {
+      width: 4.7vw; top: 105.6%; left: 61.1%; transform: rotate(-12.6deg);
     }
     .crisis-stats {
       position: relative;
