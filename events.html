@@ -9,6 +9,14 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      document.documentElement.classList.add('dark-theme');
+    }
+  </script>
 </head>
 <body>
   <nav>
@@ -20,9 +28,10 @@
       
     </div>
     <ul class="nav-links">
-      <li><a href="#" href="index.html">Home</a></li>
-      <li><a href="#" href="candidates.html">Candidates</a></li>
-      <li><a href="#" href="events.html" class="active">Events</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="candidates.html">Candidates</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
     </ul>
   </nav>
   
@@ -510,5 +519,19 @@
       </div>
     </footer>
   <a href="#" class="floating-cta">Join the Alliance</a>
+
+  <script>
+    function toggleTheme(e) {
+      if (e) e.preventDefault();
+      const html = document.documentElement;
+      if (html.classList.contains('dark-theme')) {
+        html.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+  </script>
 </body>
 </html>

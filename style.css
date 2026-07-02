@@ -861,3 +861,34 @@
     @media (max-width: 768px) {
       .masonry-candidates { column-count: 1; }
     }
+
+    /* DARK THEME */
+    html.dark-theme {
+      --text-main: #F9FAFB;
+      --text-muted: #9CA3AF;
+      --bg-body: #111827;
+      --bg-surface: #1F2937;
+      --border-color: #374151;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+      --shadow-hover: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    html.dark-theme nav {
+      background: rgba(31, 41, 55, 0.85);
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .theme-toggle {
+      font-size: 1.25rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .theme-toggle:hover {
+      transform: rotate(15deg) scale(1.1);
+    }
