@@ -298,11 +298,8 @@
     /* CRISIS BANNER */
     .crisis-banner {
       background: var(--primary);
-      background-image: url("Rose.SVG");
-      background-repeat: no-repeat;
-      background-position: right -5% center;
-      background-size: auto 150%;
-      background-blend-mode: color-burn;
+      position: relative;
+      overflow: hidden;
       padding: 100px 5%;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -901,4 +898,36 @@
     
     .theme-toggle:hover {
       transform: scale(1.1);
+    }
+
+    /* ROSE SCATTER WATERMARKS */
+    .rose-scatter {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .scatter-rose {
+      position: absolute;
+      opacity: 0.15;
+      mix-blend-mode: color-burn;
+    }
+    .scatter-rose.r1 {
+      width: 250px; top: -50px; left: -50px; transform: rotate(-25deg);
+    }
+    .scatter-rose.r2 {
+      width: 450px; bottom: -100px; right: 5%; transform: rotate(15deg);
+    }
+    .scatter-rose.r3 {
+      width: 150px; top: 30%; right: 40%; transform: rotate(-40deg);
+    }
+    .scatter-rose.r4 {
+      width: 200px; bottom: 15%; left: 30%; transform: rotate(35deg);
+    }
+    .scatter-rose.r5 {
+      width: 300px; top: -80px; right: 20%; transform: rotate(65deg);
+    }
+    .crisis-stats {
+      position: relative;
+      z-index: 2;
     }
