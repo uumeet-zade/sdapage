@@ -488,9 +488,8 @@
     }
 
     .candidate-card:hover {
-      transform: translateY(-5px);
       box-shadow: var(--shadow-hover);
-      border-color: transparent;
+      border-color: var(--primary-light);
     }
     
     .candidate-card:hover::before {
