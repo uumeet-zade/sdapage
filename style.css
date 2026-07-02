@@ -916,27 +916,29 @@
       position: absolute;
       opacity: 0.15;
       mix-blend-mode: color-burn;
+      min-width: 60px;
+      max-width: 250px;
     }
     .scatter-rose.r1 {
-      width: 180px; top: 5%; left: 0%; transform: rotate(-25deg);
+      width: 10vw; top: 10%; left: 3%; transform: rotate(-20deg);
     }
     .scatter-rose.r2 {
-      width: 250px; bottom: -5%; left: 15%; transform: rotate(15deg);
+      width: 12vw; bottom: 10%; left: 18%; transform: rotate(35deg);
     }
     .scatter-rose.r3 {
-      width: 140px; top: -5%; left: 35%; transform: rotate(-60deg);
+      width: 9vw; top: 15%; left: 33%; transform: rotate(-50deg);
     }
     .scatter-rose.r4 {
-      width: 190px; bottom: 5%; left: 50%; transform: rotate(35deg);
+      width: 13vw; bottom: 15%; left: 48%; transform: rotate(70deg);
     }
     .scatter-rose.r5 {
-      width: 200px; top: 15%; left: 65%; transform: rotate(75deg);
+      width: 11vw; top: 10%; left: 63%; transform: rotate(-85deg);
     }
     .scatter-rose.r6 {
-      width: 160px; bottom: -10%; left: 80%; transform: rotate(-15deg);
+      width: 14vw; bottom: 12%; left: 78%; transform: rotate(15deg);
     }
     .scatter-rose.r7 {
-      width: 220px; top: 10%; left: 95%; transform: rotate(-80deg);
+      width: 10vw; top: 30%; right: 3%; transform: rotate(45deg);
     }
     .crisis-stats {
       position: relative;
