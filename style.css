@@ -916,19 +916,19 @@
       mix-blend-mode: color-burn;
     }
     .scatter-rose.r1 {
-      width: 350px; top: -50px; left: -100px; transform: rotate(-25deg);
+      width: 200px; top: 5%; left: 5%; transform: rotate(-25deg);
     }
     .scatter-rose.r2 {
-      width: 500px; bottom: -150px; right: -50px; transform: rotate(15deg);
+      width: 300px; bottom: 10%; right: 5%; transform: rotate(15deg);
     }
     .scatter-rose.r3 {
-      width: 200px; top: 10%; left: 45%; transform: rotate(-60deg);
+      width: 150px; top: 15%; left: 45%; transform: rotate(-60deg);
     }
     .scatter-rose.r4 {
-      width: 250px; bottom: 5%; left: 15%; transform: rotate(35deg);
+      width: 180px; bottom: 15%; left: 25%; transform: rotate(35deg);
     }
     .scatter-rose.r5 {
-      width: 300px; top: 20%; right: 25%; transform: rotate(75deg);
+      width: 220px; top: 25%; right: 30%; transform: rotate(75deg);
     }
     .crisis-stats {
       position: relative;
