@@ -764,7 +764,7 @@
     /* MARQUEE */
     .marquee-container {
       background: var(--text-main);
-      color: white;
+      color: var(--bg-body);
       padding: 12px 0;
       overflow: hidden;
       white-space: nowrap;
@@ -864,18 +864,18 @@
 
     /* DARK THEME */
     html.dark-theme {
-      --text-main: #F9FAFB;
-      --text-muted: #9CA3AF;
-      --bg-body: #111827;
-      --bg-surface: #1F2937;
-      --border-color: #374151;
+      --text-main: #E0E0E0;
+      --text-muted: #9E9E9E;
+      --bg-body: #121212;
+      --bg-surface: #1E1E1E;
+      --border-color: #333333;
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
       --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
       --shadow-hover: 0 10px 30px rgba(0,0,0,0.5);
     }
     
     html.dark-theme nav {
-      background: rgba(31, 41, 55, 0.85);
+      background: rgba(30, 30, 30, 0.85);
       border-bottom: 1px solid var(--border-color);
     }
     
