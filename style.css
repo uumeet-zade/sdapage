@@ -918,26 +918,38 @@
       min-width: 60px;
       max-width: 250px;
     }
-    .scatter-rose.r1 {
+        .scatter-rose.r1 {
       width: 10vw; top: 10%; left: 3%; transform: rotate(-20deg);
     }
     .scatter-rose.r2 {
       width: 12vw; bottom: 10%; left: 18%; transform: rotate(35deg);
     }
     .scatter-rose.r3 {
-      width: 9vw; top: 15%; left: 33%; transform: rotate(-50deg);
+      width: 7vw; top: 5%; left: 34%; transform: rotate(-50deg);
     }
     .scatter-rose.r4 {
-      width: 13vw; bottom: 15%; left: 48%; transform: rotate(70deg);
+      width: 9vw; bottom: 5%; left: 47%; transform: rotate(70deg);
     }
     .scatter-rose.r5 {
-      width: 11vw; top: 10%; left: 63%; transform: rotate(-85deg);
+      width: 10vw; top: 10%; left: 63%; transform: rotate(-85deg);
     }
     .scatter-rose.r6 {
-      width: 14vw; bottom: 12%; left: 78%; transform: rotate(15deg);
+      width: 12vw; bottom: 12%; left: 78%; transform: rotate(15deg);
     }
     .scatter-rose.r7 {
       width: 10vw; top: 30%; right: 3%; transform: rotate(45deg);
+    }
+    .scatter-rose.r8 {
+      width: 13vw; top: 40%; left: 0%; transform: rotate(10deg);
+    }
+    .scatter-rose.r9 {
+      width: 11vw; bottom: 40%; left: -2%; transform: rotate(-30deg);
+    }
+    .scatter-rose.r10 {
+      width: 14vw; top: 5%; right: -2%; transform: rotate(-15deg);
+    }
+    .scatter-rose.r11 {
+      width: 15vw; bottom: -5%; right: 10%; transform: rotate(65deg);
     }
     .crisis-stats {
       position: relative;
