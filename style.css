@@ -960,21 +960,20 @@
 
     /* MASONRY CANDIDATES */
     .masonry-candidates {
-      column-count: 3;
-      column-gap: 32px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
       padding: 0;
     }
     .masonry-candidates .candidate-card {
-      break-inside: avoid;
-      margin-bottom: 32px;
-      display: inline-block;
+      margin-bottom: 0;
       width: 100%;
     }
     @media (max-width: 1024px) {
-      .masonry-candidates { column-count: 2; }
+      .masonry-candidates { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
-      .masonry-candidates { column-count: 1; }
+      .masonry-candidates { grid-template-columns: 1fr; }
     }
 
     /* DARK THEME */
