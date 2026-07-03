@@ -17,6 +17,7 @@
       document.documentElement.classList.add('dark-theme');
     }
   </script>
+  <script src="translations.js" defer></script>
 </head>
 <body>
   <nav>
@@ -24,7 +25,7 @@
       <img class="nav-logo"
         src="SDAlogo.svg"
         alt="Social Democratic Alliance Logo" />
-      <span class="nav-name">Social Democratic Alliance</span>
+      <span class="nav-name" data-i18n="nav-brand-name">Social Democratic Alliance</span>
       
     </a>
     <ul class="nav-links">
@@ -32,61 +33,75 @@
       <li><a href="platform.html" class="active">Platform</a></li>
       <li><a href="candidates.html">Candidates</a></li>
       <li><a href="events.html">Events</a></li>
+      <li class="lang-switcher">
+        <button class="lang-toggle" aria-label="Change Language">
+          <span class="lang-current">AL</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-lang="al">Alanian</button>
+          <button class="lang-option" data-lang="ga">Gallic</button>
+          <button class="lang-option" data-lang="ac">Alcamerian</button>
+          <button class="lang-option" data-lang="ra">Rälandic</button>
+          <button class="lang-option" data-lang="my">Myrati</button>
+          <button class="lang-option" data-lang="au">Austrumish</button>
+          <button class="lang-option" data-lang="le">Leislandic</button>
+        </div>
+      </li>
       <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
     </ul>
   </nav>
   
   <div class="page-header" style="margin-top: 73px;">
-    <h1>Our Platform</h1>
+    <h1 data-i18n="plat-title">Our Platform</h1>
     <p>We don\'t just talk about progress - we organize for it. The Social Democratic Alliance brings together citizens from every corner of Caprica to fight for a society rooted in human dignity, equality, and unyielding solidarity.</p>
   </div>
   
       <div class="platform-zigzag">
     <div class="zigzag-row">
       <div class="zigzag-content">
-        <div class="zigzag-title">Driven by Uncompromising Principles</div>
-        <p class="zigzag-desc">We refuse to compromise on what matters most. Our movement is anchored in solidarity, liberty, tolerance, social justice, and equality. We envision a Caprica where democracy isn\'t just a vote every few years, but a participatory system where the masses hold true power.</p>
+        <div class="zigzag-title" data-i18n="zig-title-1">Driven by Uncompromising Principles</div>
+        <p class="zigzag-desc" data-i18n="zig-desc-0">We refuse to compromise on what matters most. Our movement is anchored in solidarity, liberty, tolerance, social justice, and equality. We envision a Caprica where democracy isn\'t just a vote every few years, but a participatory system where the masses hold true power.</p>
       </div>
       <div class="zigzag-image-placeholder">[ Image Placeholder: Unity & Solidarity ]</div>
     </div>
 
     <div class="zigzag-row">
       <div class="zigzag-content">
-        <div class="zigzag-title">Celebrating Our Diverse Identity</div>
-        <p class="zigzag-desc">Caprica\'s strength lies in its people. We celebrate a multi-ethnic society where diversity is our greatest asset. While Alanian unites us, we will fiercely protect the indigenous, Gallic, Alcamerian, and Ralandic languages that form the irreplaceable cultural fabric of our nation.</p>
+        <div class="zigzag-title" data-i18n="zig-title-2">Celebrating Our Diverse Identity</div>
+        <p class="zigzag-desc" data-i18n="zig-desc-1">Caprica\'s strength lies in its people. We celebrate a multi-ethnic society where diversity is our greatest asset. While Alanian unites us, we will fiercely protect the indigenous, Gallic, Alcamerian, and Ralandic languages that form the irreplaceable cultural fabric of our nation.</p>
       </div>
       <div class="zigzag-image-placeholder">[ Image Placeholder: Diversity & Culture ]</div>
     </div>
 
     <div class="zigzag-row">
       <div class="zigzag-content">
-        <div class="zigzag-title">Reclaiming the Welfare State</div>
-        <p class="zigzag-desc">A civilized society guarantees dignity for all. We will relentlessly expand public healthcare, education, and social security. The working masses build Caprica\'s wealth, and under our government, they will finally reap the full rewards of their labor through deep, structural economic reform.</p>
+        <div class="zigzag-title" data-i18n="zig-title-3">Reclaiming the Welfare State</div>
+        <p class="zigzag-desc" data-i18n="zig-desc-3">A civilized society guarantees dignity for all. We will relentlessly expand public healthcare, education, and social security. The working masses build Caprica\'s wealth, and under our government, they will finally reap the full rewards of their labor through deep, structural economic reform.</p>
       </div>
       <div class="zigzag-image-placeholder">[ Image Placeholder: Working Masses & Housing ]</div>
     </div>
 
     <div class="zigzag-row">
       <div class="zigzag-content">
-        <div class="zigzag-title">A Voice on the Global Stage</div>
-        <p class="zigzag-desc">Our fight for justice does not end at our borders. In partnership with the Forward Parliamentary Group in the Columbian Union, we stand in unshakeable solidarity with democratic movements worldwide, advocating for an international order built on mutual respect and lasting peace.</p>
+        <div class="zigzag-title" data-i18n="zig-title-0">A Voice on the Global Stage</div>
+        <p class="zigzag-desc" data-i18n="zig-desc-2">Our fight for justice does not end at our borders. In partnership with the Forward Parliamentary Group in the Columbian Union, we stand in unshakeable solidarity with democratic movements worldwide, advocating for an international order built on mutual respect and lasting peace.</p>
       </div>
       <div class="zigzag-image-placeholder">[ Image Placeholder: Columbian Union & Peace ]</div>
     </div>
   </div>
   
   <section class="pillars" style="text-align: center; padding: 80px 5%; background: var(--bg-surface); margin-top: 40px; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-    <h2 class="section-title" style="margin-bottom: 24px;">The Complete Constitution</h2>
+    <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="const-title">The Complete Constitution</h2>
     <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 32px; line-height: 1.7;">
-      Our vision extends far beyond these four pillars. The SDA Constitution comprehensively addresses our internal structures, including our powerful grassroots <strong>Branches</strong>, the <strong>Social Democratic Youth</strong> wing, the <strong>SDAqueer</strong> LGBTQIA+ wing, and our close, formal cooperation with affiliated <strong>labour unions</strong>.
+      <span data-i18n="const-text-1">Our vision extends far beyond these four pillars. The SDA Constitution comprehensively addresses our internal structures, including our powerful grassroots</span> <strong><span data-i18n="const-text-2">Branches</span></strong><span data-i18n="const-text-3">, the</span> <strong><span data-i18n="const-text-4">Social Democratic Youth</span></strong> <span data-i18n="const-text-5">wing, the</span> <strong><span data-i18n="const-text-6">SDAqueer</span></strong> <span data-i18n="const-text-7">LGBTQIA+ wing, and our close, formal cooperation with affiliated</span> <strong><span data-i18n="const-text-8">labour unions</span></strong>.
     </p>
-    <a href="#" class="btn-outline">Download Constitution (PDF)</a>
+    <a href="#" class="btn-outline" data-i18n="const-btn">Download Constitution (PDF)</a>
   </section>
 
   <section class="pillars" style="text-align: center; padding: 60px 5%; background: var(--bg-body); margin-top: 40px;">
-    <h2 class="section-title" style="margin-bottom: 24px;">Who will deliver this?</h2>
-    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 32px;">Discover the men and women standing for their communities to make this platform a reality.</p>
-    <a href="candidates.html" class="btn-primary">Meet Our Candidates</a>
+    <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="deliv-title">Who will deliver this?</h2>
+    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 32px;" data-i18n="deliv-desc">Discover the men and women standing for their communities to make this platform a reality.</p>
+    <a href="candidates.html" class="btn-primary" data-i18n="deliv-btn">Meet Our Candidates</a>
   </section>
 
   <footer>
@@ -96,16 +111,16 @@
           src="SDAlogo.svg"
           alt="Social Democratic Alliance" />
         <div class="footer-brand-text">
-          <div class="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto">For the Republic. For the People.</div>
+          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
         </div>
       </div>
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footer-copy">
         Upcoming Elections · Caprica<br />
         Social Democratic Alliance
       </div>
     </footer>
-  <a href="#" class="floating-cta">Join the Alliance</a>
+  <a href="#" class="floating-cta" data-i18n="floating-cta">Join the Alliance</a>
 
   <script>
     function toggleTheme(e) {

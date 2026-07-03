@@ -17,6 +17,7 @@
       document.documentElement.classList.add('dark-theme');
     }
   </script>
+  <script src="translations.js" defer></script>
 </head>
 <body>
   <nav>
@@ -24,14 +25,28 @@
       <img class="nav-logo"
         src="SDAlogo.svg"
         alt="Social Democratic Alliance Logo" />
-      <span class="nav-name">Social Democratic Alliance</span>
+      <span class="nav-name" data-i18n="nav-brand-name">Social Democratic Alliance</span>
       
     </a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="platform.html">Platform</a></li>
-      <li><a href="candidates.html">Candidates</a></li>
-      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav-home">Home</a></li>
+      <li><a href="platform.html" data-i18n="nav-platform">Platform</a></li>
+      <li><a href="candidates.html" data-i18n="nav-candidates">Candidates</a></li>
+      <li><a href="events.html" data-i18n="nav-events">Events</a></li>
+      <li class="lang-switcher">
+        <button class="lang-toggle" aria-label="Change Language">
+          <span class="lang-current">AL</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-lang="al">Alanian</button>
+          <button class="lang-option" data-lang="ga">Gallic</button>
+          <button class="lang-option" data-lang="ac">Alcamerian</button>
+          <button class="lang-option" data-lang="ra">Rälandic</button>
+          <button class="lang-option" data-lang="my">Myrati</button>
+          <button class="lang-option" data-lang="au">Austrumish</button>
+          <button class="lang-option" data-lang="le">Leislandic</button>
+        </div>
+      </li>
       <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
     </ul>
   </nav>
@@ -39,21 +54,21 @@
   
       <div class="marquee-container">
     <div class="marquee-content">
-      <span>FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • </span>
+      <span data-i18n="marquee">FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • </span>
     </div>
     <div class="marquee-content" aria-hidden="true">
-      <span>FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • </span>
+      <span data-i18n="marquee">FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • FOR THE REPUBLIC. FOR THE PEOPLE. • </span>
     </div>
   </div>
 
   <section class="page-section" id="home">
     <div class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">For the Republic. For the People.</h1>
-        <p class="hero-subtitle">A government for the many, not the few. The Social Democratic Alliance is fighting for a Caprica where every citizen can thrive - built on the unbreakable foundations of solidarity, liberty, and social justice. We aren\'t just a party; we are a movement of the working masses.</p>
+        <h1 class="hero-title" data-i18n="hero-title">For the Republic. For the People.</h1>
+        <p class="hero-subtitle" data-i18n="hero-subtitle">A government for the many, not the few. The Social Democratic Alliance is fighting for a Caprica where every citizen can thrive - built on the unbreakable foundations of solidarity, liberty, and social justice. We aren't just a party; we are a movement of the working masses.</p>
         <div class="hero-buttons">
-          <button class="btn-primary" onclick="window.location.href='candidates.html'">Meet the Candidates</button>
-          <button class="btn-outline" onclick="window.location.href='events.html'">View Events</button>
+          <button class="btn-primary" onclick="window.location.href='candidates.html'" data-i18n="hero-btn-primary">Meet the Candidates</button>
+          <button class="btn-outline" onclick="window.location.href='events.html'" data-i18n="hero-btn-outline">View Events</button>
         </div>
       </div>
     </div>
@@ -93,34 +108,34 @@
     <img src="Rose.SVG" class="scatter-rose r30">
   </div>
       <div>
-        <div style="position:relative; z-index:2;"><h2>A Republic That Works For Everyone</h2>
-        <p style="margin-top:1rem">For too long, the establishment has treated housing, healthcare, and education as privileges rather than fundamental rights. We believe in an economy that rewards those who build it - by hand and by brain. It\'s time to reclaim our republic.</p>
+        <div style="position:relative; z-index:2;"><h2 data-i18n="crisis-title">A Republic That Works For Everyone</h2>
+        <p style="margin-top:1rem" data-i18n="crisis-desc">For too long, the establishment has treated housing, healthcare, and education as privileges rather than fundamental rights. We believe in an economy that rewards those who build it - by hand and by brain. It's time to reclaim our republic.</p>
       </div>
                   </div>
       <div class="crisis-stats">
         <div class="stat">
           <div class="stat-number">5</div>
-          <div class="stat-label">Core Principles of Democracy</div>
+          <div class="stat-label" data-i18n="stat-label-1">Core Principles of Democracy</div>
         </div>
         <div class="stat">
-          <div class="stat-number">All</div>
-          <div class="stat-label">Citizens Equal Before the Law</div>
+          <div class="stat-number" data-i18n="stat-num-all">All</div>
+          <div class="stat-label" data-i18n="stat-label-2">Citizens Equal Before the Law</div>
         </div>
         <div class="stat">
           <div class="stat-number">100%</div>
-          <div class="stat-label">Commitment to the Welfare State</div>
+          <div class="stat-label" data-i18n="stat-label-3">Commitment to the Welfare State</div>
         </div>
         <div class="stat">
           <div class="stat-number">4</div>
-          <div class="stat-label">Minority Languages Protected</div>
+          <div class="stat-label" data-i18n="stat-label-4">Minority Languages Protected</div>
         </div>
       </div>
     </section>
   
   <section class="pillars" style="text-align: center; padding-bottom: 40px;">
-    <h2 class="section-title">A Progressive Vision for Caprica</h2>
-    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">From fiercely defending our multi-ethnic Caprican identity to standing in international solidarity with the Columbian Union. Read our Constitution and core values.</p>
-    <a href="platform.html" class="btn-primary">Read our Platform</a>
+    <h2 class="section-title" data-i18n="pillars-title">A Progressive Vision for Caprica</h2>
+    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;" data-i18n="pillars-desc">From fiercely defending our multi-ethnic Caprican identity to standing in international solidarity with the Columbian Union. Read our Constitution and core values.</p>
+    <a href="platform.html" class="btn-primary" data-i18n="pillars-btn" style="text-decoration: none; display: inline-block;">Read our Platform</a>
   </section>
 
   <footer>
@@ -129,16 +144,16 @@
           src="SDAlogo.svg"
           alt="Social Democratic Alliance" />
         <div class="footer-brand-text">
-          <div class="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto">For the Republic. For the People.</div>
+          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
         </div>
       </div>
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footer-copy">
         Upcoming Elections · Caprica<br />
         Social Democratic Alliance
       </div>
     </footer>
-  <a href="#" class="floating-cta">Join the Alliance</a>
+  <a href="#" class="floating-cta" data-i18n="floating-cta">Join the Alliance</a>
 
   <script>
     function toggleTheme(e) {

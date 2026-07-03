@@ -17,6 +17,7 @@
       document.documentElement.classList.add('dark-theme');
     }
   </script>
+  <script src="translations.js" defer></script>
 </head>
 <body>
   <nav>
@@ -24,7 +25,7 @@
       <img class="nav-logo"
         src="SDAlogo.svg"
         alt="Social Democratic Alliance Logo" />
-      <span class="nav-name">Social Democratic Alliance</span>
+      <span class="nav-name" data-i18n="nav-brand-name">Social Democratic Alliance</span>
       
     </a>
     <ul class="nav-links">
@@ -32,13 +33,27 @@
       <li><a href="platform.html">Platform</a></li>
       <li><a href="candidates.html">Candidates</a></li>
       <li><a href="events.html" class="active">Events</a></li>
+      <li class="lang-switcher">
+        <button class="lang-toggle" aria-label="Change Language">
+          <span class="lang-current">AL</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-lang="al">Alanian</button>
+          <button class="lang-option" data-lang="ga">Gallic</button>
+          <button class="lang-option" data-lang="ac">Alcamerian</button>
+          <button class="lang-option" data-lang="ra">Rälandic</button>
+          <button class="lang-option" data-lang="my">Myrati</button>
+          <button class="lang-option" data-lang="au">Austrumish</button>
+          <button class="lang-option" data-lang="le">Leislandic</button>
+        </div>
+      </li>
       <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
     </ul>
   </nav>
   
   <div class="page-header" style="margin-top: 73px;">
-    <h1>On the Ground</h1>
-    <p>Join us at town halls, rallies, and community meetings across Caprica.</p>
+    <h1 data-i18n="events-page-title">On the Ground</h1>
+    <p data-i18n="events-page-desc">Join us at town halls, rallies, and community meetings across Caprica.</p>
   </div>
   
   <div class="events-section">
@@ -46,457 +61,457 @@
       
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">12</div>
           </div>
           <div class="event-details">
-            <div class="event-title">National Vision Address</div>
+            <div class="event-title" data-i18n="ev-title-0">National Vision Address</div>
             <div class="event-location">📍 Caprica Convention Center</div>
             <div class="event-time">🕒 18:00 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: Presidential Candidate</span><br>
-              Join us for the official unveiling of our national vision for Caprica's future.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Presidential Candidate</span><br>
+              <span data-i18n="ev-desc-1">Join us for the official unveiling of our national vision for Caprica's future.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">05</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Economy & Labor Town Hall</div>
+            <div class="event-title" data-i18n="ev-title-8">Economy & Labor Town Hall</div>
             <div class="event-location">📍 National Worker's Guild</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: Presidential Candidate</span><br>
-              A focused discussion on job creation, fair wages, and our economic platform.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Presidential Candidate</span><br>
+              <span data-i18n="ev-desc-2">A focused discussion on job creation, fair wages, and our economic platform.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">20</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Final Rally for the Republic</div>
+            <div class="event-title" data-i18n="ev-title-15">Final Rally for the Republic</div>
             <div class="event-location">📍 Caprica City Square</div>
             <div class="event-time">🕒 19:00 - 21:00</div>
             <div class="event-desc">
-              <span>Speaker: Presidential Candidate</span><br>
-              Our largest national rally before election day. Be part of the movement.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Presidential Candidate</span><br>
+              <span data-i18n="ev-desc-3">Our largest national rally before election day. Be part of the movement.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">18</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Party List Unity Campaign</div>
+            <div class="event-title" data-i18n="ev-title-14">Party List Unity Campaign</div>
             <div class="event-location">📍 Downtown Community Center</div>
             <div class="event-time">🕒 17:30 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: William Smith, Sherwin Hildebrand</span><br>
-              Meet the top candidates of the SDA party list discussing our legislative agenda.
+              <span data-i18n="event-speaker">Speaker:</span> <span> William Smith, Sherwin Hildebrand</span><br>
+              <span data-i18n="ev-desc-4">Meet the top candidates of the SDA party list discussing our legislative agenda.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">14</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Legislative Strategy Meeting</div>
+            <div class="event-title" data-i18n="ev-title-6">Legislative Strategy Meeting</div>
             <div class="event-location">📍 Civic Hall</div>
             <div class="event-time">🕒 18:00 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: Aldric von Reichel, Adam Scholz</span><br>
-              Open forum discussing how our list candidates will vote on upcoming infrastructure bills.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Aldric von Reichel, Adam Scholz</span><br>
+              <span data-i18n="ev-desc-5">Open forum discussing how our list candidates will vote on upcoming infrastructure bills.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">02</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Women in Leadership Forum</div>
+            <div class="event-title" data-i18n="ev-title-13">Women in Leadership Forum</div>
             <div class="event-location">📍 SDA Headquarters</div>
             <div class="event-time">🕒 16:00 - 18:00</div>
             <div class="event-desc">
-              <span>Speaker: Dorothy Roosevelt, Valentine Magres, Jeanne Valat</span><br>
-              A panel discussion focusing on social policies and family welfare.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Dorothy Roosevelt, Valentine Magres, Jeanne Valat</span><br>
+              <span data-i18n="ev-desc-6">A panel discussion focusing on social policies and family welfare.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">10</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Senate Campaign Kickoff: Florence Marin</div>
+            <div class="event-title" data-i18n="ev-title-18">Senate Campaign Kickoff: Florence Marin</div>
             <div class="event-location">📍 Senate District Office</div>
             <div class="event-time">🕒 19:00 - 20:30</div>
             <div class="event-desc">
-              <span>Speaker: Florence Marin</span><br>
-              Join us to discuss regional representation and senate reform.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Florence Marin</span><br>
+              <span data-i18n="ev-desc-7">Join us to discuss regional representation and senate reform.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">12</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Public Safety & Oversight: Florence Marin</div>
+            <div class="event-title" data-i18n="ev-title-2">Public Safety & Oversight: Florence Marin</div>
             <div class="event-location">📍 National Library</div>
             <div class="event-time">🕒 18:00 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: Florence Marin</span><br>
-              A deep dive into our transparency and accountability policies.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Florence Marin</span><br>
+              <span data-i18n="ev-desc-8">A deep dive into our transparency and accountability policies.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">11</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Senate Campaign Kickoff: Stephen Bratanovic</div>
+            <div class="event-title" data-i18n="ev-title-12">Senate Campaign Kickoff: Stephen Bratanovic</div>
             <div class="event-location">📍 Senate District Office</div>
             <div class="event-time">🕒 19:00 - 20:30</div>
             <div class="event-desc">
-              <span>Speaker: Stephen Bratanovic</span><br>
-              Join us to discuss regional representation and senate reform.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Stephen Bratanovic</span><br>
+              <span data-i18n="ev-desc-9">Join us to discuss regional representation and senate reform.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">13</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Public Safety & Oversight: Stephen Bratanovic</div>
+            <div class="event-title" data-i18n="ev-title-1">Public Safety & Oversight: Stephen Bratanovic</div>
             <div class="event-location">📍 National Library</div>
             <div class="event-time">🕒 18:00 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: Stephen Bratanovic</span><br>
-              A deep dive into our transparency and accountability policies.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Stephen Bratanovic</span><br>
+              <span data-i18n="ev-desc-10">A deep dive into our transparency and accountability policies.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">12</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Senate Campaign Kickoff: Marcus Horvat</div>
+            <div class="event-title" data-i18n="ev-title-22">Senate Campaign Kickoff: Marcus Horvat</div>
             <div class="event-location">📍 Senate District Office</div>
             <div class="event-time">🕒 19:00 - 20:30</div>
             <div class="event-desc">
-              <span>Speaker: Marcus Horvat</span><br>
-              Join us to discuss regional representation and senate reform.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Marcus Horvat</span><br>
+              <span data-i18n="ev-desc-11">Join us to discuss regional representation and senate reform.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">14</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Public Safety & Oversight: Marcus Horvat</div>
+            <div class="event-title" data-i18n="ev-title-20">Public Safety & Oversight: Marcus Horvat</div>
             <div class="event-location">📍 National Library</div>
             <div class="event-time">🕒 18:00 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: Marcus Horvat</span><br>
-              A deep dive into our transparency and accountability policies.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Marcus Horvat</span><br>
+              <span data-i18n="ev-desc-12">A deep dive into our transparency and accountability policies.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">13</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Senate Campaign Kickoff: Brezhnev Prigozhn</div>
+            <div class="event-title" data-i18n="ev-title-5">Senate Campaign Kickoff: Brezhnev Prigozhn</div>
             <div class="event-location">📍 Senate District Office</div>
             <div class="event-time">🕒 19:00 - 20:30</div>
             <div class="event-desc">
-              <span>Speaker: Brezhnev Prigozhn</span><br>
-              Join us to discuss regional representation and senate reform.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Brezhnev Prigozhn</span><br>
+              <span data-i18n="ev-desc-13">Join us to discuss regional representation and senate reform.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">OCT</div>
+            <div class="event-date-month" data-i18n="month-oct">OCT</div>
             <div class="event-date-day">15</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Public Safety & Oversight: Brezhnev Prigozhn</div>
+            <div class="event-title" data-i18n="ev-title-3">Public Safety & Oversight: Brezhnev Prigozhn</div>
             <div class="event-location">📍 National Library</div>
             <div class="event-time">🕒 18:00 - 19:30</div>
             <div class="event-desc">
-              <span>Speaker: Brezhnev Prigozhn</span><br>
-              A deep dive into our transparency and accountability policies.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Brezhnev Prigozhn</span><br>
+              <span data-i18n="ev-desc-14">A deep dive into our transparency and accountability policies.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">20</div>
           </div>
           <div class="event-details">
-            <div class="event-title">District Town Hall: Cambria</div>
+            <div class="event-title" data-i18n="ev-title-7">District Town Hall: Cambria</div>
             <div class="event-location">📍 Cambria Civic Center</div>
             <div class="event-time">🕒 18:30 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: Aldric von Reichel</span><br>
-              Addressing the unique concerns of Cambria residents and our local action plan.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Aldric von Reichel</span><br>
+              <span data-i18n="ev-desc-15">Addressing the unique concerns of Cambria residents and our local action plan.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">20</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Meet & Greet: Aldric von Reichel</div>
+            <div class="event-title" data-i18n="ev-title-23">Meet & Greet: Aldric von Reichel</div>
             <div class="event-location">📍 Cambria Plaza</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: Aldric von Reichel</span><br>
-              An informal afternoon event to speak directly with your House candidate.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Aldric von Reichel</span><br>
+              <span data-i18n="ev-desc-16">An informal afternoon event to speak directly with your House candidate.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">21</div>
           </div>
           <div class="event-details">
-            <div class="event-title">District Town Hall: Kazana</div>
+            <div class="event-title" data-i18n="ev-title-17">District Town Hall: Kazana</div>
             <div class="event-location">📍 Kazana Civic Center</div>
             <div class="event-time">🕒 18:30 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: William Smith</span><br>
-              Addressing the unique concerns of Kazana residents and our local action plan.
+              <span data-i18n="event-speaker">Speaker:</span> <span> William Smith</span><br>
+              <span data-i18n="ev-desc-17">Addressing the unique concerns of Kazana residents and our local action plan.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">21</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Meet & Greet: William Smith</div>
+            <div class="event-title" data-i18n="ev-title-9">Meet & Greet: William Smith</div>
             <div class="event-location">📍 Kazana Plaza</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: William Smith</span><br>
-              An informal afternoon event to speak directly with your House candidate.
+              <span data-i18n="event-speaker">Speaker:</span> <span> William Smith</span><br>
+              <span data-i18n="ev-desc-18">An informal afternoon event to speak directly with your House candidate.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">22</div>
           </div>
           <div class="event-details">
-            <div class="event-title">District Town Hall: Mezata</div>
+            <div class="event-title" data-i18n="ev-title-16">District Town Hall: Mezata</div>
             <div class="event-location">📍 Mezata Civic Center</div>
             <div class="event-time">🕒 18:30 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: Sherwin Hildebrand</span><br>
-              Addressing the unique concerns of Mezata residents and our local action plan.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Sherwin Hildebrand</span><br>
+              <span data-i18n="ev-desc-19">Addressing the unique concerns of Mezata residents and our local action plan.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">22</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Meet & Greet: Sherwin Hildebrand</div>
+            <div class="event-title" data-i18n="ev-title-10">Meet & Greet: Sherwin Hildebrand</div>
             <div class="event-location">📍 Mezata Plaza</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: Sherwin Hildebrand</span><br>
-              An informal afternoon event to speak directly with your House candidate.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Sherwin Hildebrand</span><br>
+              <span data-i18n="ev-desc-20">An informal afternoon event to speak directly with your House candidate.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">23</div>
           </div>
           <div class="event-details">
-            <div class="event-title">District Town Hall: Oplana</div>
+            <div class="event-title" data-i18n="ev-title-4">District Town Hall: Oplana</div>
             <div class="event-location">📍 Oplana Civic Center</div>
             <div class="event-time">🕒 18:30 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: Adam Scholz</span><br>
-              Addressing the unique concerns of Oplana residents and our local action plan.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Adam Scholz</span><br>
+              <span data-i18n="ev-desc-21">Addressing the unique concerns of Oplana residents and our local action plan.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">23</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Meet & Greet: Adam Scholz</div>
+            <div class="event-title" data-i18n="ev-title-21">Meet & Greet: Adam Scholz</div>
             <div class="event-location">📍 Oplana Plaza</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: Adam Scholz</span><br>
-              An informal afternoon event to speak directly with your House candidate.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Adam Scholz</span><br>
+              <span data-i18n="ev-desc-22">An informal afternoon event to speak directly with your House candidate.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">AUG</div>
+            <div class="event-date-month" data-i18n="month-aug">AUG</div>
             <div class="event-date-day">24</div>
           </div>
           <div class="event-details">
-            <div class="event-title">District Town Hall: Reno</div>
+            <div class="event-title" data-i18n="ev-title-19">District Town Hall: Reno</div>
             <div class="event-location">📍 Reno Civic Center</div>
             <div class="event-time">🕒 18:30 - 20:00</div>
             <div class="event-desc">
-              <span>Speaker: Dorothy Roosevelt</span><br>
-              Addressing the unique concerns of Reno residents and our local action plan.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Dorothy Roosevelt</span><br>
+              <span data-i18n="ev-desc-23">Addressing the unique concerns of Reno residents and our local action plan.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
         <div class="event-card">
           <div class="event-date">
-            <div class="event-date-month">SEP</div>
+            <div class="event-date-month" data-i18n="month-sep">SEP</div>
             <div class="event-date-day">24</div>
           </div>
           <div class="event-details">
-            <div class="event-title">Meet & Greet: Dorothy Roosevelt</div>
+            <div class="event-title" data-i18n="ev-title-11">Meet & Greet: Dorothy Roosevelt</div>
             <div class="event-location">📍 Reno Plaza</div>
             <div class="event-time">🕒 14:00 - 16:00</div>
             <div class="event-desc">
-              <span>Speaker: Dorothy Roosevelt</span><br>
-              An informal afternoon event to speak directly with your House candidate.
+              <span data-i18n="event-speaker">Speaker:</span> <span> Dorothy Roosevelt</span><br>
+              <span data-i18n="ev-desc-24">An informal afternoon event to speak directly with your House candidate.</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn-outline" style="white-space: nowrap;">RSVP</button>
+            <button class="btn-outline" style="white-space: nowrap;" data-i18n="event-rsvp">RSVP</button>
           </div>
         </div>
 
@@ -510,16 +525,16 @@
           src="SDAlogo.svg"
           alt="Social Democratic Alliance" />
         <div class="footer-brand-text">
-          <div class="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto">For the Republic. For the People.</div>
+          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
         </div>
       </div>
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footer-copy">
         Upcoming Elections · Caprica<br />
         Social Democratic Alliance
       </div>
     </footer>
-  <a href="#" class="floating-cta">Join the Alliance</a>
+  <a href="#" class="floating-cta" data-i18n="floating-cta">Join the Alliance</a>
 
   <script>
     function toggleTheme(e) {

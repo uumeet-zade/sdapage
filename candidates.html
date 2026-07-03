@@ -17,6 +17,7 @@
       document.documentElement.classList.add('dark-theme');
     }
   </script>
+  <script src="translations.js" defer></script>
 </head>
 <body>
   <nav>
@@ -24,7 +25,7 @@
       <img class="nav-logo"
         src="SDAlogo.svg"
         alt="Social Democratic Alliance Logo" />
-      <span class="nav-name">Social Democratic Alliance</span>
+      <span class="nav-name" data-i18n="nav-brand-name">Social Democratic Alliance</span>
       
     </a>
     <ul class="nav-links">
@@ -32,156 +33,170 @@
       <li><a href="platform.html">Platform</a></li>
       <li><a href="candidates.html" class="active">Candidates</a></li>
       <li><a href="events.html">Events</a></li>
+      <li class="lang-switcher">
+        <button class="lang-toggle" aria-label="Change Language">
+          <span class="lang-current">AL</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-lang="al">Alanian</button>
+          <button class="lang-option" data-lang="ga">Gallic</button>
+          <button class="lang-option" data-lang="ac">Alcamerian</button>
+          <button class="lang-option" data-lang="ra">Rälandic</button>
+          <button class="lang-option" data-lang="my">Myrati</button>
+          <button class="lang-option" data-lang="au">Austrumish</button>
+          <button class="lang-option" data-lang="le">Leislandic</button>
+        </div>
+      </li>
       <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
     </ul>
   </nav>
   
   <div class="page-header" style="margin-top: 73px;">
-    <h1>The Candidates of SDA</h1>
-    <p>Men and women from across Caprica, standing for their communities in the upcoming elections.</p>
+    <h1 data-i18n="cand-page-title">The Candidates of SDA</h1>
+    <p data-i18n="cand-page-desc">Men and women from across Caprica, standing for their communities in the upcoming elections.</p>
   </div>
   <div class="candidates-section">
     
 
       <div class="candidates-category">
-        <div class="category-label">Presidential Candidate</div>
+        <div class="category-label" data-i18n="cand-cat-pres">Presidential Candidate</div>
         <div class="masonry-candidates">
           <div class="candidate-card">
             <div class="candidate-initials">TBD</div>
-            <div class="candidate-name">To Be Determined</div>
-            <div class="candidate-role">Presidential Candidate</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Our presidential candidate will be announced soon.</div>
+            <div class="candidate-name" data-i18n="cand-tbd">To Be Determined</div>
+            <div class="candidate-role" data-i18n="role-pres">Presidential Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-pres">Our presidential candidate will be announced soon.</div>
           </div>
         </div>
       </div>
 
       <div class="candidates-category">
-        <div class="category-label">2058 Senate Candidates</div>
+        <div class="category-label" data-i18n="cand-cat-senate">2058 Senate Candidates</div>
         <div class="masonry-candidates">
           <div class="candidate-card">
             <div class="candidate-initials">FM</div>
             <div class="candidate-name">Florence Marin</div>
-            <div class="candidate-role">Party Chair • Senate Candidate</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Running for the 2058 Senate elections.</div>
+            <div class="candidate-role" data-i18n="role-chair-senate">Party Chair • Senate Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-senate">Running for the 2058 Senate elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">SB</div>
             <div class="candidate-name">Stephen Bratanovic</div>
-            <div class="candidate-role">Senate Candidate</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Running for the 2058 Senate elections.</div>
+            <div class="candidate-role" data-i18n="role-senate">Senate Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-senate">Running for the 2058 Senate elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">MH</div>
             <div class="candidate-name">Marcus Horvat</div>
-            <div class="candidate-role">Senate Candidate</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Running for the 2058 Senate elections.</div>
+            <div class="candidate-role" data-i18n="role-senate">Senate Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-senate">Running for the 2058 Senate elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">BP</div>
             <div class="candidate-name">Brezhnev Prigozhn</div>
-            <div class="candidate-role">Senate Candidate</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Running for the 2058 Senate elections.</div>
+            <div class="candidate-role" data-i18n="role-senate">Senate Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-senate">Running for the 2058 Senate elections.</div>
           </div>
         </div>
       </div>
 
       <div class="candidates-category">
-        <div class="category-label">2060 House Candidates</div>
+        <div class="category-label" data-i18n="cand-cat-house">2060 House Candidates</div>
         <div class="masonry-candidates">
           <div class="candidate-card">
             <div class="candidate-initials">AR</div>
             <div class="candidate-name">Aldric von Reichel</div>
-            <div class="candidate-role">House Candidate</div>
-            <div class="candidate-constituency">Cambria</div>
-            <div class="candidate-bio">Running for the 2060 House elections.</div>
+            <div class="candidate-role" data-i18n="role-house">House Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-cam">Cambria</div>
+            <div class="candidate-bio" data-i18n="bio-house">Running for the 2060 House elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">WS</div>
             <div class="candidate-name">William Smith</div>
-            <div class="candidate-role">House Candidate</div>
-            <div class="candidate-constituency">Kazana</div>
-            <div class="candidate-bio">Running for the 2060 House elections.</div>
+            <div class="candidate-role" data-i18n="role-house">House Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-kaz">Kazana</div>
+            <div class="candidate-bio" data-i18n="bio-house">Running for the 2060 House elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">SH</div>
             <div class="candidate-name">Sherwin Hildebrand</div>
-            <div class="candidate-role">House Candidate</div>
-            <div class="candidate-constituency">Mezata</div>
-            <div class="candidate-bio">Running for the 2060 House elections.</div>
+            <div class="candidate-role" data-i18n="role-house">House Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-mez">Mezata</div>
+            <div class="candidate-bio" data-i18n="bio-house">Running for the 2060 House elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">AS</div>
             <div class="candidate-name">Adam Scholz</div>
-            <div class="candidate-role">House Candidate</div>
-            <div class="candidate-constituency">Oplana</div>
-            <div class="candidate-bio">Running for the 2060 House elections.</div>
+            <div class="candidate-role" data-i18n="role-house">House Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-opl">Oplana</div>
+            <div class="candidate-bio" data-i18n="bio-house">Running for the 2060 House elections.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">DR</div>
             <div class="candidate-name">Dorothy Roosevelt</div>
-            <div class="candidate-role">House Candidate</div>
-            <div class="candidate-constituency">Reno</div>
-            <div class="candidate-bio">Running for the 2060 House elections.</div>
+            <div class="candidate-role" data-i18n="role-house">House Candidate</div>
+            <div class="candidate-constituency" data-i18n="const-ren">Reno</div>
+            <div class="candidate-bio" data-i18n="bio-house">Running for the 2060 House elections.</div>
           </div>
         </div>
       </div>
 
       <div class="candidates-category">
-        <div class="category-label">Party List</div>
+        <div class="category-label" data-i18n="cand-cat-list">Party List</div>
         <div class="masonry-candidates">
           <div class="candidate-card">
             <div class="candidate-initials">1</div>
             <div class="candidate-name">William Smith</div>
-            <div class="candidate-role">Party List #1</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Top candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-1">Party List #1</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-top">Top candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">2</div>
             <div class="candidate-name">Sherwin Hildebrand</div>
-            <div class="candidate-role">Party List #2</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-2">Party List #2</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">3</div>
             <div class="candidate-name">Aldric von Reichel</div>
-            <div class="candidate-role">Party List #3</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-3">Party List #3</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">4</div>
             <div class="candidate-name">Adam Scholz</div>
-            <div class="candidate-role">Party List #4</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-4">Party List #4</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">5</div>
             <div class="candidate-name">Dorothy Roosevelt</div>
-            <div class="candidate-role">Party List #5</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-5">Party List #5</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">6</div>
             <div class="candidate-name">Valentine Magres</div>
-            <div class="candidate-role">Party List #6</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-6">Party List #6</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
           <div class="candidate-card">
             <div class="candidate-initials">7</div>
             <div class="candidate-name">Jeanne Valat</div>
-            <div class="candidate-role">Party List #7</div>
-            <div class="candidate-constituency">National</div>
-            <div class="candidate-bio">Candidate on the party list.</div>
+            <div class="candidate-role" data-i18n="role-list-7">Party List #7</div>
+            <div class="candidate-constituency" data-i18n="const-nat">National</div>
+            <div class="candidate-bio" data-i18n="bio-list-reg">Candidate on the party list.</div>
           </div>
         </div>
       </div>
@@ -190,9 +205,9 @@
   </div>
 
   <section class="pillars" style="text-align: center; padding: 60px 5%; background: var(--bg-body); margin-top: 40px;">
-    <h2 class="section-title" style="margin-bottom: 24px;">Meet them on the ground</h2>
-    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 32px;">Join our candidates at town halls, rallies, and community meetings near you.</p>
-    <a href="events.html" class="btn-primary">View Upcoming Events</a>
+    <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="cand-meet-title">Meet them on the ground</h2>
+    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 32px;" data-i18n="cand-meet-desc">Join our candidates at town halls, rallies, and community meetings near you.</p>
+    <a href="events.html" class="btn-primary" data-i18n="cand-meet-btn">View Upcoming Events</a>
   </section>
 
   <footer>
@@ -202,11 +217,11 @@
           src="SDAlogo.svg"
           alt="Social Democratic Alliance" />
         <div class="footer-brand-text">
-          <div class="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto">For the Republic. For the People.</div>
+          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
         </div>
       </div>
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footer-copy">
         Upcoming Elections · Caprica<br />
         Social Democratic Alliance
       </div>
@@ -214,7 +229,7 @@
   
 
 
-  <a href="#" class="floating-cta">Join the Alliance</a>
+  <a href="#" class="floating-cta" data-i18n="floating-cta">Join the Alliance</a>
 
   <script>
     function toggleTheme(e) {
