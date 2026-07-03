@@ -623,6 +623,22 @@
       color: var(--primary);
     }
 
+    .candidate-image {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 24px;
+      border: 2px solid var(--border-color);
+      transition: var(--transition);
+      background-color: white;
+    }
+
+    .candidate-card:hover .candidate-image {
+      border-color: var(--primary);
+      transform: scale(1.05);
+    }
+
     .candidate-name {
       font-size: 1.25rem;
       font-weight: 700;
@@ -913,25 +929,13 @@
     .zigzag-row:nth-child(even) {
       flex-direction: row-reverse;
     }
-    .zigzag-image-placeholder {
+    .zigzag-image {
       flex: 1;
-      background: var(--border-color);
       aspect-ratio: 4/3;
       border-radius: var(--radius-lg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-weight: 600;
-      font-size: 1.25rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .zigzag-image-placeholder::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+      object-fit: cover;
+      box-shadow: var(--shadow-md);
+      width: 100%;
     }
     .zigzag-content {
       flex: 1;
