@@ -9,6 +9,9 @@
 
 const dictionary = {
   al: {
+    "cand-cat-gov": "Governor Candidates",
+    "role-gov": "Governor Candidate",
+    "bio-gov-ren": "Running for Governor of Reno.",
     "nav-brand-name": "Social Democratic Alliance",
     "nav-home": "Home",
     "nav-platform": "Platform",
@@ -143,6 +146,9 @@ const dictionary = {
     "deliv-btn": "Meet Our Candidates"
   },
   ga: {
+    "cand-cat-gov": "Candidats au poste de Gouverneur",
+    "role-gov": "Candidat au poste de Gouverneur",
+    "bio-gov-ren": "Candidat au poste de Gouverneur de Reno.",
     "nav-brand-name": "Alliance Sociale-Démocrate",
     "nav-home": "Accueil",
     "nav-platform": "Programme",
@@ -277,6 +283,9 @@ const dictionary = {
     "deliv-btn": "Rencontrez Nos Candidats"
   },
   ac: {
+    "cand-cat-gov": "Candidatos a Gobernador",
+    "role-gov": "Candidato a Gobernador",
+    "bio-gov-ren": "Candidato a Gobernador de Reno.",
     "nav-brand-name": "Alianza Socialdemócrata",
     "nav-home": "Inicio",
     "nav-platform": "Plataforma",
@@ -411,6 +420,9 @@ const dictionary = {
     "deliv-btn": "Conoce a Nuestros Candidatos"
   },
   ra: {
+    "cand-cat-gov": "Guvernørkandidater",
+    "role-gov": "Guvernørkandidat",
+    "bio-gov-ren": "Stiller op som guvernør i Reno.",
     "nav-brand-name": "Socialdemokratisk Alliance",
     "nav-home": "Hjem",
     "nav-platform": "Platform",
@@ -545,6 +557,9 @@ const dictionary = {
     "deliv-btn": "Mød Vores Kandidater"
   },
   my: {
+    "cand-cat-gov": "Ymgeiswyr Llywodraethwr",
+    "role-gov": "Ymgeisydd Llywodraethwr",
+    "bio-gov-ren": "Yn rhedeg ar gyfer Llywodraethwr Reno.",
     "nav-brand-name": "Cynghrair Sosialaidd Ddemocrataidd",
     "nav-home": "Hafan",
     "nav-platform": "Llwyfan",
@@ -679,6 +694,9 @@ const dictionary = {
     "deliv-btn": "Cwrdd â'n Hymgeiswyr"
   },
   au: {
+    "cand-cat-gov": "Gubernatora Kandidāti",
+    "role-gov": "Gubernatora Kandidāts",
+    "bio-gov-ren": "Kandidē uz Reno gubernatora amatu.",
     "nav-brand-name": "Sociāldemokrātiskā Alianse",
     "nav-home": "Sākums",
     "nav-platform": "Platforma",
@@ -813,6 +831,9 @@ const dictionary = {
     "deliv-btn": "Satieciet Mūsu Kandidātus"
   },
   le: {
+    "cand-cat-gov": "Gouverneurskandidaten",
+    "role-gov": "Gouverneurskandidat",
+    "bio-gov-ren": "Kandidiert für das Amt des Gouverneurs von Reno.",
     "nav-brand-name": "Sozialdemokratische Allianz",
     "nav-home": "Startseite",
     "nav-platform": "Plattform",
