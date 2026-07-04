@@ -1013,6 +1013,83 @@
       }
     }
 
+    /* FEATURED CANDIDATES */
+    .featured-candidates {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+    .featured-candidate-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .featured-candidate-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--primary);
+    }
+    .featured-candidate-card .candidate-image,
+    .featured-candidate-card .candidate-initials {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      object-fit: cover;
+      margin-bottom: 0;
+      border: 3px solid var(--bg-body);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface-bg);
+      color: var(--text-main);
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+    }
+    .featured-candidate-card .candidate-details {
+      flex: 1;
+    }
+    .featured-candidate-card .candidate-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .featured-candidate-card .candidate-role {
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .featured-candidate-card .candidate-constituency {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .featured-candidate-card .candidate-bio {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .featured-candidate-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        gap: 16px;
+      }
+    }
+
     /* MASONRY CANDIDATES */
     .masonry-candidates {
       display: grid;
