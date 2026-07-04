@@ -684,28 +684,32 @@
     }
 
     .filter-btn {
-      background: transparent;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      padding: 8px 16px;
-      border-radius: 20px;
+      padding: 10px 20px;
       font-size: 0.95rem;
       font-weight: 600;
+      font-family: inherit;
+      border-radius: var(--radius-sm);
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: var(--transition);
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
     }
 
     .filter-btn:hover {
-      background: rgba(215, 0, 58, 0.1);
+      border-color: var(--text-main);
+      transform: translateY(-2px);
     }
 
     .filter-btn.active {
-      background: var(--primary);
-      color: white;
+      background: var(--text-main);
+      color: var(--bg-body);
+      border-color: var(--text-main);
     }
 
     html.dark-theme .filter-btn.active {
-      color: white;
+      background: var(--text-main);
+      color: var(--bg-body);
     }
 
     .events-list {
