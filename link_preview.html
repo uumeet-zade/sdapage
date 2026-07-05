@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDA Link Preview Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #D7003A; /* Rose Red */
+      --primary-light: #fef0f3;
+      --text-main: #111827;
+      --text-muted: #6B7280;
+      --bg-body: #F4F6F9;
+      --bg-surface: #FFFFFF;
+      --border-color: #E5E7EB;
+    }
+
+    body {
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* 1200x630 is the standard size for OpenGraph/Twitter link previews */
+    .preview-container {
+      width: 1200px;
+      height: 630px;
+      background: var(--bg-body);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Glassmorphism Background Elements */
+    .bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 1;
+    }
+
+    .shape-1 {
+      width: 600px;
+      height: 600px;
+      background: rgba(215, 0, 58, 0.15); /* Primary color with low opacity */
+      top: -200px;
+      left: -100px;
+    }
+
+    .shape-2 {
+      width: 700px;
+      height: 700px;
+      background: rgba(255, 255, 255, 0.8);
+      bottom: -300px;
+      right: -200px;
+    }
+
+    /* Content Card with Glassmorphism */
+    .content-card {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 32px;
+      padding: 80px 100px;
+      width: 960px;
+      text-align: center;
+      box-shadow: 0 24px 48px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .logo-container {
+      width: 140px;
+      height: 140px;
+      background: white;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 20px;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .title {
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .title .highlight {
+      color: var(--primary);
+    }
+
+    .subtitle {
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: -0.01em;
+    }
+
+    /* Floating Roses Pattern Background */
+    .pattern-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.03;
+      background-image: url('Rose.SVG');
+      background-size: 80px;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Instructions for the user (not part of the preview) -->
+  <div style="position: absolute; top: 20px; text-align: center; width: 100%; color: #666; font-size: 18px;">
+    <strong>Instructions:</strong> Maximize your browser window, take a screenshot of the 1200x630 rectangle below,<br>
+    and save it as <code>link_preview.png</code>.
+  </div>
+
+  <div class="preview-container">
+    <div class="pattern-bg"></div>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <div class="content-card">
+      <div class="logo-container">
+        <img src="SDAlogo.svg" alt="SDA Logo">
+      </div>
+      <div class="text-content">
+        <h1 class="title">Social Democratic <span class="highlight">Alliance</span></h1>
+        <p class="subtitle">For the Republic. For the People.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
